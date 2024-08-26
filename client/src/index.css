@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.template {
+    background-color: white;
+    padding: 0 10rem 0 10rem;
+    color: black;
+    font-weight: normal;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.detail{
+    margin-top: 40px;
+}
+
+.list{
+    margin: 20px 0 0 30px;
+}
+
+.bottom{
+    margin-top: 20px;
+}
+
+.Sincerely{
+    margin-top: 30px;
+}
+
+hr{
+    color: black;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.date-input::-webkit-datetime-edit-text {
+    color: black;
+  }
+  
+  .date-input::-webkit-datetime-edit-month-field {
+    color: black;
+  }
+  
+  .date-input::-webkit-datetime-edit-day-field {
+    color: black;
+  }
+  
+  .date-input::-webkit-datetime-edit-year-field {
+    color: black;
+  }
+  
+  .date-input::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  .date-input::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
