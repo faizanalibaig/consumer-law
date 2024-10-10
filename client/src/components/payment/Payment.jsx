@@ -9,7 +9,7 @@ const SubscribeButton = ({ planType, planID, userID }) => {
   const handleSubscribe = async () => {
     setLoading(true);
     try {
-      const response = await axios.post('http://localhost:8000/api/payment/subscribe', {
+      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BASEURL}/api/payment/subscribe`, {
         _id: "66002750654573f14f538ef9",
         planType: "TRIAL",
         planID: "price_1OzuYDCP79PNi6t6Ctk07LU8",

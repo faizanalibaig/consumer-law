@@ -12,7 +12,7 @@ function Form({ heading, des, link, imageLink }) {
       if (LOGINDETAILS) {
         try {
           const userPlanStatus = await axios.get(
-            "http://localhost:8000/api/payment/userPlanStatus",
+            `${import.meta.env.VITE_REACT_APP_BASEURL}/api/payment/userPlanStatus`,
             {
               params: {
                 _id: JSON.parse(LOGINDETAILS)._id,

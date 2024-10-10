@@ -39,7 +39,7 @@ const PaymentCard = ({ title, pricingInfo, shortHeading, perks }) => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/payment/checkout",
+        `${import.meta.env.VITE_REACT_APP_BASEURL}/api/payment/checkout`,
         {
           _id: JSON.parse(LOGINDETAILS)._id,
           planType: PLAN.name,

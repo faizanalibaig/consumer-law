@@ -46,7 +46,7 @@ function SignIn() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/auth/user/signup",
+        `${import.meta.env.VITE_REACT_APP_BASEURL}/api/auth/user/signup`,
         {
           email,
           password,

@@ -20,7 +20,7 @@ const OneTimePayment = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/payment/oneTimePayment",
+        `${import.meta.env.VITE_REACT_APP_BASEURL}/api/payment/oneTimePayment`,
         {
           _id: JSON.parse(LOGINDETAILS)._id,
           planID: "price_1P1i6rCP79PNi6t6TGrW5x8F",

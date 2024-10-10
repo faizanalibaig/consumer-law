@@ -26,7 +26,7 @@ function SignIn() {
         );
 
         const googleSignInSignup = await axios.post(
-          "http://localhost:8000/api/auth/user/googleSignInAndSignup",
+          `{import.meta.env.VITE_REACT_APP_BASEURL}/api/auth/user/googleSignInAndSignup`,
           {
             email: userInfoResponse.data.email,
           }
@@ -114,7 +114,7 @@ function SignIn() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/auth/user/signin",
+        `${import.meta.env.VITE_REACT_APP_BASEURL}/api/auth/user/signin`,
         {
           email,
           password,
